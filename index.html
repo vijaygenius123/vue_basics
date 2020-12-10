@@ -9,9 +9,10 @@
 <h1>Hello, Vue :)</h1>
 <div id="app">
     {{message}}
-
-    <ul v-for="name in names">
-        <li v-bind="name">{{name}}</li>
+    <ul>
+    <li v-for="name in names" v-bind="{name}">
+        {{name}}
+    </li>
     </ul>
 </div>
 <script src="./app.js"></script>
